@@ -1,16 +1,15 @@
 {
-  "name": "react-youtube-app",
+  "name": "redux-simple-starter",
   "version": "1.0.0",
-  "description": "Simple YouTube app from React tutorial",
-  "main": "./src/entry.js",
-  "repository": "git@github.com:smgwilson/react-youtube-app.git",
+  "description": "Simple starter package for Redux with React and Babel support",
+  "main": "index.js",
+  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
-    "start": "node ./app.js",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Sheri Wilson",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
@@ -24,20 +23,16 @@
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "express": "^4.13.4",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
-    "webpack": "^1.12.9",
     "youtube-api-search": "0.0.5"
   }
 }
